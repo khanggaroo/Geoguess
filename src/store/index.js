@@ -1,13 +1,17 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import homeStore from './homeStore';
-import gameStore from './gameStore';
+import areaStore from './areaStore';
+import settingsStore from './settingsStore';
+import alertStore from './alertStore';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
     modules: {
         homeStore,
-        gameStore,
+        areaStore,
+        settingsStore,
+        alertStore,
     },
 });

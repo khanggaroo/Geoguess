@@ -1,12 +1,14 @@
 import Header from '@/components/page/Header.vue';
 import { createLocalVue, mount, shallowMount } from '@vue/test-utils';
 import homeStore from '@/store/homeStore';
-import appInit from '../../utils/appInit';
+import * as MutationTypes from '@/store/mutation-types';
+import appInit from '../../testutils/appInit';
 import Vuex from 'vuex';
 
 const args = appInit(createLocalVue());
 
 describe('Header.vue', () => {
+    const setStreamerModeStore = jest.fn();
     let store;
     beforeEach(() => {
         store = new Vuex.Store({
@@ -15,6 +17,9 @@ describe('Header.vue', () => {
                     state: homeStore.state,
                     getters: homeStore.getters,
                     actions: homeStore.actions,
+                    mutations: {
+                        [MutationTypes.HOME_SET_STREAMER_MODE]: setStreamerModeStore,
+                    },
                 },
             },
         });
@@ -41,4 +46,5 @@ describe('Header.vue', () => {
         wrapper.vm.switchLanguage('fr');
         expect(localStorage.getItem('language')).toEqual('fr');
     });
+
 });

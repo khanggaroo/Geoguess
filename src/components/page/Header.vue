@@ -10,9 +10,12 @@
             </router-link>
 
             <div class="flex-grow-1" />
-            
-            <v-app-bar-nav-icon class="header__nav-icon" @click="menuMobile = !menuMobile"></v-app-bar-nav-icon>
-            <nav class="header__nav" :class="{visible: menuMobile}">
+
+            <v-app-bar-nav-icon
+                class="header__nav-icon"
+                @click="menuMobile = !menuMobile"
+            ></v-app-bar-nav-icon>
+            <nav class="header__nav" :class="{ visible: menuMobile }">
                 <v-btn id="historyBtn" text>
                     <router-link to="/history">
                         {{ $t('Home.historyBtn') }}
@@ -22,7 +25,7 @@
                     <v-btn id="aboutBtn" text @click="aboutDialog = true">
                         <v-icon size="30"> mdi-help-circle </v-icon>
                     </v-btn>
-                    <v-btn text @click="setStreamerMode(!streamerMode)">
+                    <v-btn text @click="changeStreamerMode(!streamerMode)">
                         <v-icon size="30">
                             mdi-eye{{ streamerMode ? '-off' : '' }}
                         </v-icon>
@@ -65,29 +68,19 @@
                 </v-col>
             </v-row>
         </v-alert>
-        <v-alert
-            type="success"
-            v-model="streamerMode"
-            dismissible
-            transition="slide-x-reverse-transition"
-            id="alertStreamerMode"
-            icon="mdi-twitch"
-            color="streamerMode"
-        >
-            <h4>{{ $t('Home.streamerModeActivate') }}</h4>
-            <p>{{ $t('Home.streamerModeDetails') }}</p>
-        </v-alert>
+        <HeaderAlert />
     </div>
 </template>
 <script>
 import About from '@/components/page/About';
-import { languages } from '../../lang';
-import { mapMutations, mapState } from 'vuex';
-import * as MutationTypes from '@/store/mutation-types';
+import { languages, RTL_LANGUAGES } from '../../lang';
+import { mapActions, mapState } from 'vuex';
+import HeaderAlert from './HeaderAlert.vue';
 
 export default {
     components: {
         About,
+        HeaderAlert,
     },
     data() {
         return {
@@ -105,12 +98,14 @@ export default {
         },
     },
     methods: {
-        ...mapMutations({
-            setStreamerMode: MutationTypes.HOME_SET_STREAMER_MODE,
-        }),
+        ...mapActions(['setStreamerMode']),
+        changeStreamerMode(streamerMode) {
+            this.setStreamerMode(streamerMode);
+        },
         switchLanguage(language) {
             this.$i18n.locale = language;
             this.$vuetify.lang.current = language;
+            this.$vuetify.rtl = RTL_LANGUAGES.includes(language);
             this.saveLanguage(language);
         },
         saveLanguage(language) {
@@ -145,18 +140,11 @@ export default {
     .header__logo-min {
         display: none;
     }
-    .header__nav-icon{
+    .header__nav-icon {
         visibility: hidden;
     }
 }
 
-#alertStreamerMode {
-    width: fit-content;
-    position: absolute;
-    z-index: 2;
-    right: 0;
-    margin: 0.625rem;
-}
 @media (max-width: 780px) {
     .header {
         .header__logo {
@@ -165,8 +153,8 @@ export default {
         .header__logo-min {
             display: block;
         }
-        .header__nav{
-            &:not(.visible){
+        .header__nav {
+            &:not(.visible) {
                 display: none;
             }
             position: absolute;
@@ -175,15 +163,15 @@ export default {
             background: #f1e9d6;
             padding: 1rem;
             box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%);
-            border-bottom-left-radius: .3125rem;
-            border-bottom-right-radius: .3125rem;
+            border-bottom-left-radius: 0.3125rem;
+            border-bottom-right-radius: 0.3125rem;
             max-width: 100%;
             flex-direction: row;
-            .header__nav__btns{
+            .header__nav__btns {
                 margin: 0;
             }
         }
-        .header__nav-icon{
+        .header__nav-icon {
             visibility: visible;
         }
     }

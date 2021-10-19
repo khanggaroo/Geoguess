@@ -3,7 +3,7 @@ module.exports = {
     collectCoverage: true,
     collectCoverageFrom: [
         'src/**/*.{js,vue}',
-        'src/utils.js',
+        'src/utils/*',
         '!**/node_modules/**',
         '!src/plugins/*',
         '!src/lang/*',
@@ -12,6 +12,6 @@ module.exports = {
         '!src/registerServiceWorker.js',
     ],
     transformIgnorePatterns: [
-        'node_modules/(?!gmap-vue|axios-cache-adapter|cache-control-esm)',
+        'node_modules/(?!gmap-vue|axios-cache-adapter|cache-control-esm|vuetify)',
     ],
 };

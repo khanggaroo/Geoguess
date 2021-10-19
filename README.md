@@ -4,7 +4,7 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/GeoGuess/GeoGuess)](https://github.com/GeoGuess/Geoguess/releases) 
 [![GitHub](https://img.shields.io/github/license/BilelJegham/Geoguess-2)](https://github.com/GeoGuess/Geoguess/blob/master/LICENSE) 
 [![Discord](https://img.shields.io/discord/758443244387303435?color=7289DA&label=discord&logo=discord&logoColor=FFFFFF)](https://discord.gg/9GXm6RT)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg)](#-contribution)
+[![All Contributors](https://img.shields.io/badge/all_contributors-18-orange.svg)](#-contribution)
 <!-- ALL-CONTRIBUTORS-BADGE:END --> 
 
 ![CI](https://github.com/GeoGuess/Geoguess/workflows/CI/badge.svg)
@@ -72,6 +72,14 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://technicproblem.github.io"><img src="https://avatars.githubusercontent.com/u/38329398?v=4?s=100" width="100px;" alt=""/><br /><sub><b>TechnicProblem</b></sub></a><br /><a href="#translation-TechnicProblem" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/maksovnik"><img src="https://avatars.githubusercontent.com/u/60991351?v=4?s=100" width="100px;" alt=""/><br /><sub><b>maksovnik</b></sub></a><br /><a href="https://github.com/GeoGuess/Geoguess/commits?author=maksovnik" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Stimmenhotel"><img src="https://avatars.githubusercontent.com/u/15821524?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Stimmenhotel</b></sub></a><br /><a href="#translation-Stimmenhotel" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://crowdin.com/profile/jabbarmusin"><img src="https://crowdin-static.downloads.crowdin.com/avatar/14762568/large/a571d24c903f99fb222b289840695534.jpeg?s=100" width="100px;" alt=""/><br /><sub><b>Cabbar Musin</b></sub></a><br /><a href="#translation-jabbarmusin" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://crowdin.com/profile/jukefox"><img src="https://crowdin-static.downloads.crowdin.com/avatar/14626368/large/a84a666b450718b62ed469fd1a225acd.png?s=100" width="100px;" alt=""/><br /><sub><b>M Treize</b></sub></a><br /><a href="#translation-jukefox" title="Translation">🌍</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://crowdin.com/profile/thalissevero"><img src="https://www.gravatar.com/avatar/8ef7e5e3502f9816962a7d1536609dd6?s=260&d=https%3A%2F%2Fcrowdin.com%2Fimages%2Fuser-picture.png?s=100" width="100px;" alt=""/><br /><sub><b>ThalisSevero</b></sub></a><br /><a href="#translation-ThalisSevero" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/ElectableRuby31"><img src="https://avatars.githubusercontent.com/u/81558780?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ElectableRuby31</b></sub></a><br /><a href="#translation-ElectableRuby31" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://crowdin.com/profile/raccort"><img src="https://crowdin-static.downloads.crowdin.com/avatar/13144827/large/a3efba5b13184b1e1318c2e06b0d3004.png?s=100" width="100px;" alt=""/><br /><sub><b>raccort</b></sub></a><br /><a href="#translation-Andrea Cortesi" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://securitylive.com"><img src="https://avatars.githubusercontent.com/u/663211?v=4?s=100" width="100px;" alt=""/><br /><sub><b>johnebgood</b></sub></a><br /><a href="#ideas-johnebgood" title="Ideas, Planning, & Feedback">🤔</a> <a href="#financial-johnebgood" title="Financial">💵</a></td>
   </tr>
 </table>
 

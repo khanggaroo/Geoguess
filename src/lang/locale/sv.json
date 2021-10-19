@@ -1,6 +1,6 @@
 {
     "Home": {
-        "placeVisited": "0 place visited | 1 place visited | {count} places visited",
+        "placeVisited": "0 platser besökta | 1 plats besökt | {count} platser besökta",
         "historyBtn": "HISTORIK",
         "about": "OM",
         "searchBar": {
@@ -23,8 +23,24 @@
         "limitation": "BEGRÄNSNING",
         "limitationDescription": "För nuvarande sätter jag begränsningar per dag för att kostnadena för spelet inte ska bli för höga.             Om kartan inte laddar innebär det att den åtkomliga mängden har förbrukats.              Den kommer att återställas vid midnatt Pacific Time(UTC-8) Ursäktar för besvären.             This game is open source so you can build your own game server and play this game unlimitedly.",
         "play": "Spela",
-        "streamerModeActivate": "Streamer mode activate",
-        "streamerModeDetails": "URLs and room names are hidden"
+        "streamerModeActivate": "Aktivera streamerläge",
+        "streamerModeDetails": "URLer och rumsnamn göms",
+        "mapSavedAlert": {
+            "title": "Karta sparad 🎉",
+            "subtitle": "Du kan hitta den i din kartlista"
+        },
+        "HomeCard": {
+            "edit": "Redigera",
+            "delete": "Radera"
+        },
+        "HomeCardMode": {
+            "map": "Karta",
+            "area": "Yta"
+        },
+        "Sections": {
+            "areasTitle": "Areas",
+            "mapsTitle": "Maps"
+        }
     },
     "StreetView": {
         "nearby": {
@@ -75,7 +91,13 @@
         "edit": "Redigera karta",
         "fileLabel": "Välj GeoJSON-fil",
         "OK": "OK",
-        "download": "Ladda ner GeoJSON"
+        "download": "Ladda ner GeoJSON",
+        "Clean": "Rensa",
+        "save": "spara",
+        "inputName": {
+            "label": "Kartnamn",
+            "placeholder": "Min favoritplats"
+        }
     },
     "History": {
         "title": "Historik",
@@ -85,11 +107,12 @@
         "distance": "Distans",
         "points": "Poäng",
         "rank": "Rank",
+        "actions": "Actions",
         "search": "Sök",
         "exportGeoSave": "Exportera GeoSave",
         "importGeoSave": "Importera GeoSave",
         "exportCSV": "Exportera CSV",
-        "total": "Total"
+        "total": "Totalt"
     },
     "DialogRoom": {
         "singlePlayer": "Enspelarläge",
@@ -97,16 +120,16 @@
         "invalidRoomName": "Ogiltigt namn. Vänligen försök med ett annat.",
         "inProgress": "Den första spelaren skapar rummet just nu. Vänligen vänta och försök igen.",
         "roomIsFull": "Detta rum är redan fullt. Vänligen försök med ett annat.",
-        "alreadyStarted": "This room has aldready started.  Please try another."
+        "alreadyStarted": "Detta rum har redan startat. Vänligen försök igen."
     },
     "CardRoomName": {
         "title": "Skriv ett rumsnamn för att skapa ett nytt rum eller gå med i ett redan existerande rum"
     },
     "CardRoomPlayerName": {
-        "title": "Room:",
-        "input": "Type a player name.",
+        "title": "Rum:",
+        "input": "Skriv ett spelarnamn.",
         "anonymousPlayerName": "Anonym 🕵",
-        "players": "1 player | {count} players"
+        "players": "1 spelare | {count} spelare"
     },
     "CardRoomSize": {
         "title": "Sätt en rumsstorlek."
@@ -114,6 +137,11 @@
     "CardRoomTime": {
         "title": "Sätt en tidsbegränsning.",
         "infinite": "Oändlig"
+    },
+    "CardRoomMap": {
+        "title": "Definiera din karta",
+        "loadBtn": "Ladda KARTA",
+        "reset": "Återställ"
     },
     "CardRoomSettings": {
         "title": "Spelinställningar",
@@ -124,12 +152,14 @@
         "allowMove": "Tillåt förflyttning",
         "allowZoom": "Tillåt zoomning",
         "allowPan": "Tillåt panorering",
-        "countDownLabel": "CountDown (seconds)",
-        "scoreModeLabel": "Score formula",
+        "countDownLabel": "Nedräkning (sekunder)",
+        "scoreModeLabel": "Poängformel",
         "scoreModes": {
             "normal": "normal",
-            "time": "time"
-        }
+            "time": "tid"
+        },
+        "selectAreas": "Välj ytor",
+        "moreSettings": "More settings"
     },
     "CardRoomDifficulty": {
         "title": "Sätt en svårighetsgrad.",
@@ -154,7 +184,8 @@
     },
     "modes": {
         "classic": "Klassiskt",
-        "country": "Välj land"
+        "country": "Välj land",
+        "custom_area": "Välj"
     },
     "Demo": {
         "message": "Om du vill bidra till ett projekt och göra det bättre är din hjälp väldigt välkommen :  Översättning 🔠, Kartor 🌍, Kod 💻, Idéer 💡, Betatestning 👀.",

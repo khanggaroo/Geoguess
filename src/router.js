@@ -26,6 +26,14 @@ export default new Router({
             component: Home,
         },
         {
+            path: '/custom',
+            name: 'home custom',
+            component: Home,
+            props: () => ({
+                dialogCustomOpen: true,
+            }),
+        },
+        {
             path: '/game/:partyParams',
             name: 'party',
             component: Home,
@@ -52,8 +60,7 @@ export default new Router({
             beforeEnter: (to, from, next) => {
                 let enterGame = true;
                 if (
-                    to.params.modeSelected !== GAME_MODE.CLASSIC &&
-                    to.params.modeSelected !== GAME_MODE.COUNTRY
+                    !Object.values(GAME_MODE).includes(to.params.modeSelected)
                 ) {
                     enterGame = false;
                 }

@@ -24,7 +24,23 @@
         "limitationDescription": "Actuellement, j'ai fixé un quota par jour afin que le coût du jeu ne soit pas élevé.            Si la carte ne se charge pas, cela signifie que le quota a été dépassé.            Il est réinitialisé à minuit (heure du pacifique). Désolé pour le dérangement.             Le jeu est open source, ainsi il vous est possible de créer votre propre jeu pour y jouer sans limite.",
         "play": "Jouer",
         "streamerModeActivate": "Mode Streamer activé",
-        "streamerModeDetails": "Les URLs et les noms des salles sont masqués"
+        "streamerModeDetails": "Les URLs et les noms des salles sont masqués",
+        "mapSavedAlert": {
+            "title": "Carte sauvegardée 🎉",
+            "subtitle": "Vous la trouverez dans vos listes de cartes"
+        },
+        "HomeCard": {
+            "edit": "Éditer",
+            "delete": "Supprimer"
+        },
+        "HomeCardMode": {
+            "map": "Carte",
+            "area": "Zone"
+        },
+        "Sections": {
+            "areasTitle": "Zones",
+            "mapsTitle": "Cartes"
+        }
     },
     "StreetView": {
         "nearby": {
@@ -44,7 +60,7 @@
         "nextRound": "MANCHE SUIVANTE",
         "viewSummary": "VOIR LE RÉSUMÉ",
         "exit": "QUITTER",
-        "reset": "RÉINIT.",
+        "reset": "RÉINITIALISER",
         "playAgain": "REJOUER",
         "infoWindow": {
             "Distance": "Distance",
@@ -75,7 +91,13 @@
         "edit": "Editer la carte",
         "fileLabel": "Selectionner un fichier GeoJSON",
         "OK": "OK",
-        "download": "Télécharger GeoJSON"
+        "download": "Télécharger GeoJSON",
+        "Clean": "Effacer",
+        "save": "enregistrer",
+        "inputName": {
+            "label": "Nom de la carte",
+            "placeholder": "Mon lieu favori"
+        }
     },
     "History": {
         "title": "Historique",
@@ -85,10 +107,11 @@
         "distance": "Distance",
         "points": "Points",
         "rank": "Classement",
+        "actions": "Actions",
         "search": "Rechercher",
         "exportGeoSave": "Exporter en GeoSave",
-        "importGeoSave": "Import un GeoSave",
-        "exportCSV": "Export CSV",
+        "importGeoSave": "Import une GeoSave",
+        "exportCSV": "Exporter en CSV",
         "total": "Total"
     },
     "DialogRoom": {
@@ -115,6 +138,11 @@
         "title": "Saisir le temps maximum par manche.",
         "infinite": "Infini"
     },
+    "CardRoomMap": {
+        "title": "Définissez votre carte",
+        "loadBtn": "Charger la carte",
+        "reset": "Réinitialiser"
+    },
     "CardRoomSettings": {
         "title": "Paramètre de la partie",
         "modeLabel": "Choisissez le mode de jeu",
@@ -129,7 +157,9 @@
         "scoreModes": {
             "normal": "normal",
             "time": "temps"
-        }
+        },
+        "selectAreas": "Sélectionner les zones",
+        "moreSettings": "Paramètres avancés"
     },
     "CardRoomDifficulty": {
         "title": "Saisir la difficulté.",
@@ -154,7 +184,8 @@
     },
     "modes": {
         "classic": "Classique",
-        "country": "Pays"
+        "country": "Pays",
+        "custom_area": "Cibler"
     },
     "Demo": {
         "message": "Tu souhaites contribuer au projet et le rendre meilleur, ton aide est la bienvenue :  Traduction 🔠, Créateur de carte 🌍, Code 💻, Idée 💡, Beta test 👀.",

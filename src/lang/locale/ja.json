@@ -24,7 +24,23 @@
         "limitationDescription": "地図とストリートビューを表示させるのにお金がかかるため制限をかけています。        1日の制限を超えると地図が正しくロードされなくなります。         制限は太平洋標準時での深夜にリセットされます。        このサイトはオープンソースなので制限なく遊びたい方は自分でゲームをセットアップすることもできます。",
         "play": "プレイ",
         "streamerModeActivate": "Streamer mode activate",
-        "streamerModeDetails": "URLs and room names are hidden"
+        "streamerModeDetails": "URLs and room names are hidden",
+        "mapSavedAlert": {
+            "title": "Map saved 🎉",
+            "subtitle": "You will find it in your map lists"
+        },
+        "HomeCard": {
+            "edit": "Edit",
+            "delete": "Delete"
+        },
+        "HomeCardMode": {
+            "map": "Map",
+            "area": "Area"
+        },
+        "Sections": {
+            "areasTitle": "Areas",
+            "mapsTitle": "Maps"
+        }
     },
     "StreetView": {
         "nearby": {
@@ -75,7 +91,13 @@
         "edit": "Edit Map",
         "fileLabel": "Select GeoJSON file",
         "OK": "OK",
-        "download": "Download GeoJSON"
+        "download": "Download GeoJSON",
+        "Clean": "Clean",
+        "save": "save",
+        "inputName": {
+            "label": "Map Name",
+            "placeholder": "My favorite place"
+        }
     },
     "History": {
         "title": "History",
@@ -85,6 +107,7 @@
         "distance": "Distance",
         "points": "Points",
         "rank": "Rank",
+        "actions": "Actions",
         "search": "Search",
         "exportGeoSave": "Export GeoSave",
         "importGeoSave": "Import GeoSave",
@@ -115,6 +138,11 @@
         "title": "1ラウンドの制限時間を選択して下さい。",
         "infinite": "無制限"
     },
+    "CardRoomMap": {
+        "title": "Define your map",
+        "loadBtn": "Load MAP",
+        "reset": "Reset"
+    },
     "CardRoomSettings": {
         "title": "Game Settings",
         "modeLabel": "Select game mode",
@@ -129,7 +157,9 @@
         "scoreModes": {
             "normal": "normal",
             "time": "time"
-        }
+        },
+        "selectAreas": "Select Areas",
+        "moreSettings": "More settings"
     },
     "CardRoomDifficulty": {
         "title": "Set a difficulty level.",
@@ -154,7 +184,8 @@
     },
     "modes": {
         "classic": "Classic",
-        "country": "Pick country"
+        "country": "Pick country",
+        "custom_area": "Pick"
     },
     "Demo": {
         "message": "If you want to contribute to a project and make it better, your help is very welcome :  Translation 🔠, Mapper 🌍, Code 💻, Idea 💡, Beta test 👀.",
